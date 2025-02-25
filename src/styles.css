@@ -1,0 +1,136 @@
+/* Global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f5f7;
+  font-size: 14px;
+  height: 100%;
+  overflow: hidden; /* Prevent both vertical and horizontal scrolling */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  box-sizing: border-box;
+}
+
+.display {
+  background-color: white;
+  padding: 15px;
+}
+
+.dropdown-button {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.controls {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+.dropdown {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+label{
+  margin-right: 80px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.dropdown-item {
+  margin-bottom: 10px;
+}
+.board {
+  display: flex;
+  gap: 16px;
+  flex-grow: 1; 
+  overflow: auto; 
+  justify-content: space-between;
+}
+.column {
+  padding: 16px;
+  width: calc(100% / 5 - 20px); 
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #333;
+}
+
+.column-options {
+  display: flex;
+  align-items: center;
+}
+
+.add-icon, .menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.priority-icon {
+  font-size: 18px;
+}
+
+.ticket-status, .ticket-tag {
+  background-color: #f1f1f1;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
